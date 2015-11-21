@@ -10,5 +10,8 @@
     "name": "Atsushi Yasuda",
     "email": "atsushi.yasuda.jp@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^1.0.8"
+  }
 }
