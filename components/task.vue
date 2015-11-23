@@ -1,7 +1,8 @@
 <!-- vim: set ft=html : -->
 <template>
 <div>
-  {{task.title}}
+  <label>タイトル</label>
+  <input type="text" v-model="task.title" placeholder="タイトルを入力してください">
 </div>
 </template>
 
