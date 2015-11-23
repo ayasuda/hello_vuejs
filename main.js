@@ -1,9 +1,12 @@
 var Vue = require('vue')
-var TaskList = global.TaskList = require('./model/task_list').default
-var Task = global.Task = require('./model/task').default
+var TaskList = require('./model/task_list').default
+var Task = require('./model/task').default
+
+var task_list = global.task_list = new TaskList
 
 new Vue({
   el: '#app',
+  data: task_list,
   components: {
     MyMessage: require('./components/message.vue'),
   }
