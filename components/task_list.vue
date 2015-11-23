@@ -28,6 +28,11 @@ export default {
   events: {
     'task-changed': function () {
       this.list.save()
+    },
+    'task-removed': function (task) {
+      var index = this.list.tasks.indexOf(task)
+      this.list.tasks.splice(index, 1)
+      this.list.save()
     }
   }
 }

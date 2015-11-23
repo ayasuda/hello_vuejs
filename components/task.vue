@@ -8,6 +8,7 @@
   v-on:keyup.enter="saveTask"
   v-on:blur="saveTask"
   >
+  <span v-on:click="removeTask">削除</span>
 </div>
 </template>
 
@@ -21,7 +22,10 @@ export default {
   methods: {
     saveTask: function() {
       this.$dispatch('task-changed')
-    }
+    },
+    removeTask: function() {
+      this.$dispatch('task-removed', this.task)
+    },
   }
 }
 </script>
