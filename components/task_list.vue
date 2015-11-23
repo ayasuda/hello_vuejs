@@ -24,6 +24,11 @@ export default {
     addTask: function() {
       this.list.add(new Task)
     }
+  },
+  events: {
+    'task-changed': function () {
+      this.list.save()
+    }
   }
 }
 </script>
