@@ -3,7 +3,7 @@
   <div>{{list.title}}</div>
   <ul>
     <li v-for="task in list.tasks">
-      {{task.title}}
+      <my-task :task="task"></my-task>
     </li>
   </ul>
 </template>
@@ -14,6 +14,9 @@ var TaskList = require('../model/task_list').default
 export default {
   props: {
     list: { type: Object, default: () => { return new TaskList } }
+  },
+  components: {
+    MyTask: require('./task.vue')
   }
 }
 </script>
