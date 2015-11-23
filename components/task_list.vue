@@ -1,6 +1,11 @@
 <!-- vim: set ft=html : -->
 <template>
   <div>{{list.title}}</div>
+  <ul>
+    <li v-for="task in list.tasks">
+      {{task.title}}
+    </li>
+  </ul>
 </template>
 
 <script>
