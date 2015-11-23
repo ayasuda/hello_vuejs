@@ -6,10 +6,12 @@
       <my-task :task="task"></my-task>
     </li>
   </ul>
+  <div v-on:click="addTask">タスクを追加する</div>
 </template>
 
 <script>
 var TaskList = require('../model/task_list').default
+var Task = require('../model/task').default
 
 export default {
   props: {
@@ -17,6 +19,11 @@ export default {
   },
   components: {
     MyTask: require('./task.vue')
+  },
+  methods: {
+    addTask: function() {
+      this.list.add(new Task)
+    }
   }
 }
 </script>

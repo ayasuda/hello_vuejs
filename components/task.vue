@@ -1,6 +1,8 @@
 <!-- vim: set ft=html : -->
 <template>
-  <div>{{task.title}}</div>
+<div>
+  {{task.title}}
+</div>
 </template>
 
 <script>
