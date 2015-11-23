@@ -1,5 +1,13 @@
 <!-- vim: set ft=html : -->
+
+<style>
+  .my-task-list {
+    color: #ffcc00;
+  }
+</style>
+
 <template>
+<div class="my-task-list">
   <div>{{list.title}}</div>
   <ul>
     <li v-for="task in list.tasks">
@@ -7,6 +15,7 @@
     </li>
   </ul>
   <div v-on:click="addTask">タスクを追加する</div>
+</div>
 </template>
 
 <script>

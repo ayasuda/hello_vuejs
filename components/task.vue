@@ -1,6 +1,13 @@
 <!-- vim: set ft=html : -->
+
+<style>
+  .my-task {
+    color: #f0c;
+  }
+</style>
+
 <template>
-<div>
+<div class="my-task">
   <label>タイトル</label>
   <input type="text"
   v-model="task.title"
