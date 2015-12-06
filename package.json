@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
   "author": {
     "name": "Atsushi Yasuda",
@@ -22,6 +22,7 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "gulp": "^3.9.0",
+    "gulp-karma": "0.0.5",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.15",
     "karma-chrome-launcher": "^0.2.2",
