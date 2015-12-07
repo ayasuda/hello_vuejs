@@ -33,6 +33,9 @@ export default {
     removeTask: function() {
       this.$dispatch('task-removed', this.task)
     },
+  },
+  created: function() {
+    console.log("created")
   }
 }
 </script>
